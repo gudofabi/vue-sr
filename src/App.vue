@@ -52,10 +52,10 @@ onMounted(() => {
 // check for words
 const checkForCommand = (result) => {
   const t = result[0].transcript
-  if(t.includes('stop recording')) 
+  if(t.includes('stop recording'))
   {
     sr.stop();
-  } else if(t.includes('what is the time') || t.includes(`what's the time`))
+  } else if(t.includes('what time it is?') || t.includes(`what time it is?`))
   {
     sr.stop()
     alert(new Date().toLocaleDateString());
