@@ -55,7 +55,7 @@ const checkForCommand = (result) => {
   if(t.includes('stop recording'))
   {
     sr.stop();
-  } else if(t.includes('what time is it?') || t.includes(`what time is it?`))
+  } else if(t.includes('what time it is?') || t.includes(`what time it is?`))
   {
     sr.stop()
     alert(new Date().toLocaleDateString());
